@@ -38,7 +38,7 @@ img {
 }
 
 .aboutText {
-    font-size: 26px;
+    font-size: 20px;
 }
 
 .selfie {
@@ -105,4 +105,8 @@ ul {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.contact {
+    margin: 500px 0 0 0;
 }
