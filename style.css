@@ -17,7 +17,7 @@ img {
     grid-template-rows: 10px 100px 50px 100px 100px 100px;
     grid-gap: 5px;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     grid-template-areas:
         "header header header tagline tagline tagline"
         "header header header tagline tagline tagline"
