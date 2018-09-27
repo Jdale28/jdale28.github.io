@@ -1,26 +1,70 @@
 .longBreak {
     border-bottom: solid;
-    border-color: rgba(0,0,0,.25);
+    border-color: rgba(0, 0, 0, .25);
     margin: 30px 0 30px 0;
 }
 
-img  {
-    width: 20%;
+img {
+    width: 60%;
     height: auto;
 }
 
-.headerContainer {
+.headerAboutContainer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
     width: 100vw;
-    height: 40vh;
+    height: 100vh;
     grid-template-areas:
-        "header header header header header header"
-        "header header header header header header"
+        "header header header tagline tagline tagline"
+        "header header header tagline tagline tagline"
         "nav nav nav nav nav nav"
         "img img about about about about"
         "img img about about about about"
         "img img about about about about"
+}
+
+.mainName {
+    grid-area: header;
+    background-color: blue;
+    display: flex;
+}
+
+.tagline {
+    grid-area: tagline;
+    background-color: green;
+}
+
+.aboutTitle {
+    grid-area: about;
+    background-color: red;
+}
+
+.selfie {
+    grid-area: img;
+    background-color: orange;
+}
+
+.about {
+    grid-area: about;
+    background-color: purple;
+}
+
+nav {
+    grid-area: nav;
+    background-color: yellow;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    text-align: center;
+}
+
+.Projects {
+    background-color: blue;
 }
