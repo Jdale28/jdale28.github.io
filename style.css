@@ -5,14 +5,16 @@
 }
 
 img {
-    width: 60%;
+    width: 90%;
     height: auto;
+    align-items: center;
+    margin: 40px 0 0 0;
 }
 
 .headerAboutContainer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: 10px 100px 50px 100px 100px 100px;
     grid-gap: 5px;
     width: 100vw;
     height: 100vh;
@@ -25,35 +27,40 @@ img {
         "img img about about about about"
 }
 
-.mainName {
-    grid-area: header;
-    background-color: blue;
-    display: flex;
-}
-
 .tagline {
     grid-area: tagline;
-    background-color: green;
 }
 
 .aboutTitle {
     grid-area: about;
-    background-color: red;
+    font-size: 40px;
+    margin: 40px 0 0 0;
+}
+
+.aboutText {
+    font-size: 26px;
 }
 
 .selfie {
     grid-area: img;
-    background-color: orange;
-}
-
-.about {
-    grid-area: about;
-    background-color: purple;
 }
 
 nav {
     grid-area: nav;
-    background-color: yellow;
+    background-color:black;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color:black;
+}
+
+.mainName {
+    grid-area: header;
+    display: flex;
 }
 
 ul {
@@ -65,6 +72,37 @@ ul {
     text-align: center;
 }
 
-.Projects {
-    background-color: blue;
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;  
+    width: 100vw;
+    height: 200px;
+    grid-template-areas:
+        "header header header header"
+        "title content content content"
+        "title content content content"
+        "title content content content";
+}
+
+.projectHeader {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    font-size: 30px;
+}
+
+.projectTitle {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+}
+
+.projectContent {
+    grid-area: content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
